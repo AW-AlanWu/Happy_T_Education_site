@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login as auth_login, logout
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from .models import *
 
 @login_required(login_url="personal:login")
 def userProfile(request):
@@ -34,6 +35,14 @@ def saveAccount(request):
             request.POST['password'],
         )
         user.save()
+        c = Coin(user=user)
+        c.save()
+        if request.POST['options'] == 'teacher':
+            t = Teacher(user=user)
+            t.save()
+        elif request.POST['options'] == 'student':
+            s = Student(user=user)
+            s.save()
         return HttpResponseRedirect(reverse('personal:login'))
 
 def authenticateAccount(request):

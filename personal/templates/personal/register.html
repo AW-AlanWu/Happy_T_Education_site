@@ -53,6 +53,17 @@
                             <input id="re-pass" type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="Repeat your password" pattern="^((?=.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*|(?=.{8,}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!\u0022#$%&'()*+,./:;<=>?@[\]\^_`{|}~-]).*)" minlength="8" title="請最少輸入8位以上的大小寫英文與數字以及特殊符號" required>
                         </div>
                         <br>
+                        <input type="radio" class="btn-check" name="options" value="student" id="primary-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="primary-outlined"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>Student</label>
+
+                        <input type="radio" class="btn-check" name="options" value="teacher" id="warning-outlined" autocomplete="off">
+                        <label class="btn btn-outline-warning" for="warning-outlined"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                        </svg>Teacher</label>
+                        <br>
+                        <br>
                         <input type="button" class="btn btn-success btn-lg" value="註冊" onclick="checkPass(this);">
                     </form>
                 </div>
