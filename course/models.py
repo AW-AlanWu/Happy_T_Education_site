@@ -1,5 +1,6 @@
 from django.db import models
 from personal.models import Teacher, Student
+from django.conf import settings
 
 class Course(models.Model):
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE, default="教師")
@@ -16,4 +17,28 @@ class Course(models.Model):
     def __str__(self):
         return self.name
 
-# Create your models here.
+class Problem(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        default=None
+    )
+    problem = models.CharField(u"問題",max_length=500)
+
+    def __str__(self):
+        return self.problem
+
+class Answer(models.Model):
+    problem = models.ForeignKey(
+        Problem,
+        on_delete=models.CASCADE,
+    )
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        default=None
+    )
+    answer = models.CharField(u"解答",max_length=500)
+
+    def __str__(self):
+        return self.answer

@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from .models import Course
 
 @login_required(login_url="personal:login")
 def course(request):
-    context = {}
+    Course.objects.order_by('-pk')
+    context = {
+        'Courses_List' : Course.objects.order_by('-pk')
+    }
     if request.user.is_authenticated:
         context['is_authenticated'] = True
     return render(request, 'course/course.html', context=context)

@@ -51,9 +51,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="gcontent col-md-3 text-start english active ">
-                        <div class="outer">                       
-                            <a href="#">
+                    {% for course in Courses_List %}
+                    <div class="col-md-3 text-start chinese active gcontent">
+                        <div class="outer">
+                            <a href="{% url 'course:detail' %}">
                                 <div class="inner">
                                     {% load static %}
                                     <img src="{% static 'pic/replace.png' %}">
@@ -62,67 +63,14 @@
                                     </div>
                                 </div>
                                 <div class="down">
-                                    <h3>瑞庭英文</h3>
-                                    <p>授課教師：許瑞庭</p>
-                                    <span>課堂數：10</span>
+                                    <h3>{{course.name}}</h3>
+                                    <p>授課教師：{{course.teacher}}</p>
+                                    <span>課堂數：{{course.lessons}}</span>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="gcontent col-md-3 text-start math active ">
-                        <div class="outer">                       
-                            <a href="#">
-                                <div class="inner">
-                                    {% load static %}
-                                    <img src="{% static 'pic/replace.png' %}">
-                                    <div class="innertext">
-                                        <span>可報名</span>
-                                    </div>
-                                </div>
-                                <div class="down">
-                                    <h3>洪命數學</h3>
-                                    <p>授課教師：洪命</p>
-                                    <span>課堂數：10</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gcontent col-md-3 text-start physical active ">
-                        <div class="outer">                       
-                            <a href="#">
-                                <div class="inner">
-                                    {% load static %}
-                                    <img src="{% static 'pic/replace.png' %}">
-                                    <div class="innertext">
-                                        <span>可報名</span>
-                                    </div>
-                                </div>
-                                <div class="down">
-                                    <h3>昊呆物理</h3>
-                                    <p>授課教師：陳昊呆</p>
-                                    <span>課堂數：12</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gcontent col-md-3 text-start sociaty active ">
-                        <div class="outer">                       
-                            <a href="#">
-                                <div class="inner">
-                                    {% load static %}
-                                    <img src="{% static 'pic/replace.png' %}">
-                                    <div class="innertext">
-                                        <span>可報名</span>
-                                    </div>
-                                </div>
-                                <div class="down">
-                                    <h3>馬修社會</h3>
-                                    <p>授課教師：高馬修</p>
-                                    <span>課堂數：12</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
