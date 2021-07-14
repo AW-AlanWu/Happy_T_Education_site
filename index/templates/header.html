@@ -1,47 +1,46 @@
 <!-- header.html -->
 <header class="color">
-    <div class="container ">        
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link active" aria-current="page" href="{% url 'index:index' %}"><i class="fas fa-home"></i>主頁</a>
+  <div class="container ">        
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                      <a class="nav-link active" aria-current="page" href="{% url 'index:index' %}"><i class="fas fa-home"></i>主頁</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-book-open"></i>學習
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'course:course' %}">課程</a></li>
+                        <li><a class="dropdown-item" href="{% url 'course:problem' %}">題目問答</a></li>
+                      </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-book-open"></i>學習
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="{% url 'course:course' %}">課程</a></li>
-                          <li><a class="dropdown-item" href="{% url 'course:problem' %}">題目問答</a></li>
-                        </ul>
-                      </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'camp:List' %}"><i class="fas fa-campground"></i>營隊</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'event:event' %}"><i class="fas fa-newspaper"></i>時事</a>
-                    </li>
-                    <li class="nav-item right" >
-                        <a class="nav-link" href="{% url 'personal:user' %}"><i class="fas fa-user"></i>個人</a>
-                    </li>
-                    <li class="nav-item right">
-                        <p class="nav-link"><i class="fas fa-coins"></i>：0</p>
-                    </li>
-                    <li class="nav-item justify-content-end right">
-                        <button class="btn btn-light" type="submit">登入</button>
-                        <button class="btn btn-light" type="submit">註冊</button>
-                    </li>
-                  </div>
-                </ul>
-              </div>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="{% url 'camp:List' %}"><i class="fas fa-campground"></i>營隊</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="{% url 'event:event' %}"><i class="fas fa-newspaper"></i>時事</a>
+                  </li>
+                  <li class="nav-item " >
+                      <a class="nav-link active" href="{% url 'personal:userProfile' %}"><i class="fas fa-user"></i>個人</a>
+                  </li>
+                  <li class="nav-item ">
+                      <p class="nav-link active"><i class="fas fa-coins"></i>T幣：</p>
+                  </li>
+                  <li class="nav-item justify-content-end right">                      
+                      <a class="btn btn-success btn-lg" href="{% url 'personal:login' %}" role="button">登入</a>
+                      <a class="btn btn-success btn-lg" href="{% url 'personal:register' %}" role="button">註冊</a>
+                  </li>    
+                </div>
+              </ul>
             </div>
-          </nav>
-    </div>
+          </div>
+        </nav>
+  </div>
 </header>
