@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section id="question">
+    <div class="container">
+        <div class="row ">  
+            <div class="col-md-8 offset-md-2 text-center bord">
+                <h2>題目討論</h2>
+                <h4 class="text-end left"><a href="#"><i class="fas fa-plus"></i>詢問問題</a></h4>
+                <div class="row">
+                    <div class="col-md-12 shadow">
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                {% load static %}
+                                <img src="{% static 'pic/replace.png' %}">
+                                <h4>Peter</h4>
+                            </div>
+                            <div class="col-md-8 text-start">
+                                <h4>數學問題</h4>
+                                <p>求解 5!+3! 為多少</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="down text-start col-md-12">
+                            <div class="input-group input-group-md">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="你的回答">
+                                <a class="btn btn-primary btn-lg" href="#" role="button">提交</a>
+                            </div>
+                        </div>                       
+                    </div>                        
+                </div>           
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block bodyScript %}
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

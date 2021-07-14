@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section id="intro">
+    <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="center">
+                <h1>快樂T教育平台</h1>
+                <p>快來快樂T，學習qulity</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<!--second third 輪播-->
+<section id="second">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {% load static %}
+                <img src="{% static 'pic/class.jpg' %}" alt="pic1">
+            </div>
+            <div class="col-md-6">
+                <div class="center">
+                    <h2>各式各樣的免費課程</h2>
+                    <p>擁有高質量的學習課程，也可以與裡面的教師互動。</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">加入課程</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="third">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 center">
+                <h2>不定期舉辦的營隊活動</h2>
+                <p>隨時關注我們</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">尋找營隊</a>
+            </div>
+            <div class="col-md-6">
+                {% load static %}
+                <img src="{% static 'pic/camp.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="fourth">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center ">
+            <h2></h2>
+            <h3>沒有代幣嗎?快去<span><a href="{% url 'course:problem' %}">題目問答</a></span>幫別人解決問題吧！</h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

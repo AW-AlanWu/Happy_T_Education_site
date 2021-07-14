@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section class="class">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>課程資訊</h2>
+                <h4 class="text-end left"><a href="#"><i class="fas fa-plus"></i>新增課程</a></h4>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <li class="nav-item btnall">
+                        <a class="nav-link active" aria-current="page" href="#">全部</a>
+                        </li>
+                        <li class="nav-item btn1">
+                            <a class="nav-link" href="#">語文</a>
+                        </li>
+                        <li class="nav-item btn2">
+                            <a class="nav-link" href="#">數學</a>
+                        </li>
+                        <li class="nav-item btn3">
+                            <a class="nav-link" href="#">英文</a>
+                        </li>
+                        <li class="nav-item btn4">
+                            <a class="nav-link" href="#">自然</a>
+                        </li>
+                        <li class="nav-item btn5">
+                            <a class="nav-link" href="#">社會</a>
+                        </li>
+                        <li class="nav-item btn6">
+                            <a class="nav-link" href="#">技術</a>
+                        </li>
+                    </div>
+                  </nav>
+                <div class="row">
+                    <div class="col-md-3 text-start chinese active gcontent">
+                        <div class="outer">                       
+                            <a href="#">
+                                <div class="inner">
+                                    {% load static %}
+                                    <img src="{% static 'pic/replace.png' %}">
+                                    <div class="innertext">
+                                        <span>可報名</span>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <h3>吳宏國文</h3>
+                                    <p>授課教師：吳柏宏</p>
+                                    <span>課堂數：12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gcontent col-md-3 text-start english active ">
+                        <div class="outer">                       
+                            <a href="#">
+                                <div class="inner">
+                                    {% load static %}
+                                    <img src="{% static 'pic/replace.png' %}">
+                                    <div class="innertext">
+                                        <span>可報名</span>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <h3>瑞庭英文</h3>
+                                    <p>授課教師：許瑞庭</p>
+                                    <span>課堂數：10</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gcontent col-md-3 text-start math active ">
+                        <div class="outer">                       
+                            <a href="#">
+                                <div class="inner">
+                                    {% load static %}
+                                    <img src="{% static 'pic/replace.png' %}">
+                                    <div class="innertext">
+                                        <span>可報名</span>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <h3>洪命數學</h3>
+                                    <p>授課教師：洪命</p>
+                                    <span>課堂數：10</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gcontent col-md-3 text-start physical active ">
+                        <div class="outer">                       
+                            <a href="#">
+                                <div class="inner">
+                                    {% load static %}
+                                    <img src="{% static 'pic/replace.png' %}">
+                                    <div class="innertext">
+                                        <span>可報名</span>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <h3>昊呆物理</h3>
+                                    <p>授課教師：陳昊呆</p>
+                                    <span>課堂數：12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gcontent col-md-3 text-start sociaty active ">
+                        <div class="outer">                       
+                            <a href="#">
+                                <div class="inner">
+                                    {% load static %}
+                                    <img src="{% static 'pic/replace.png' %}">
+                                    <div class="innertext">
+                                        <span>可報名</span>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <h3>馬修社會</h3>
+                                    <p>授課教師：高馬修</p>
+                                    <span>課堂數：12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block bodyScript %}
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

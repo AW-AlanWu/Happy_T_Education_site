@@ -1,0 +1,244 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans TC',sans-serif;
+  }
+p,a,label,input,span,textarea,ul,li{
+  font-family: 'Open Sans';
+}
+img{
+  max-width: 100%;
+}
+header nav li{
+  margin: 0 18px;
+  font-size: 1.5rem;
+}
+.color{
+  background: #aceca1;
+}
+#intro .jumbotron{
+  height: 80vh;
+  background: url('../pic/whiteyellow.png');
+  background-size: cover;
+  background-position: 50%;
+}
+/* https://images.edexlive.com/uploads/user/imagelibrary/2019/3/26/original/thesisc.jpg */
+#intro .container{
+  position: relative;
+  transform: translate(0, -50%);
+  top: 30%;
+  background: url('https://i.pinimg.com/originals/34/9f/b6/349fb611022ec7f6176d26321fce0011.gifs');
+}
+
+#intro h1{
+  font-size: 4rem;
+}
+#second {
+  margin-top: 80px;
+  padding: 20px;
+}
+#second .center{
+  padding: 30px;
+  position: relative;
+  transform: translate(0, -50%);
+  top: 30%;
+}
+.btn{
+  border-radius: 20px;
+}
+#second h2{
+  font-size: 3rem;
+}
+#second img{
+  width: 90%;
+  border-radius: 20px;
+}
+#third{
+  margin-top: 100px;
+  padding: 20px;
+}
+#third .center{
+  padding: 30px;
+}
+#third h2{
+  font-size: 3rem;
+}
+#third img{
+  width: 90%;
+  border-radius: 20px;
+}
+#fourth {
+  margin: 30px 0px;
+}
+#fourth a{
+  text-decoration: none;
+}
+footer{
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* class anc camp base */
+.class{
+  margin-top: 100px;
+}
+.class .active{
+  display: block;
+}
+.gcontent{
+  display: none;
+}
+.class .col-md-3{
+  margin-bottom: 50px;
+}
+.class a{
+  text-decoration: none;
+  color: black;
+}
+.class a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+.class h2{
+  margin-bottom: 20px;
+}
+.class h4 .left{
+  margin-right: 15px;
+}
+.class nav li{
+  font-size: 1.2rem;
+  list-style: none;
+}
+.class .container{
+  min-height: 80vh;
+  border-left: 2px solid rgba(0, 0, 0, 0.09);
+  border-right: 2px solid rgba(0, 0, 0, 0.09);
+}
+.class .outer{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  transform: scale(1) ease all;
+}
+.class .outer:hover{
+  transform: scale(1.2) ease all;
+}
+.class .inner{
+  position: relative;
+}
+.class .innertext span{
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 43%;
+  left: 37%;
+  display: none;
+}
+.class .down{
+  padding: 22px;
+}
+
+/* question */
+
+#question{
+  padding: 80px;
+}
+#question a{
+  text-decoration: none;
+  color: black;
+}
+#question .bord{
+  height: 70vh;
+  border-left: 2px solid rgba(0, 0, 0, 0.09);
+  border-right: 2px solid rgba(0, 0, 0, 0.09);
+  padding: 20px;
+}
+#question .ques{
+  padding: 20px 0;
+}
+#question .shadow{
+  box-shadow: 0 0 8px  rgba(0, 0, 0, 0.12);
+}
+#question img{
+  width: 100px;
+  border-radius: 100%;
+}
+#question .down{
+  padding: 10px;
+}
+
+/*camp list*/
+.info{
+  padding: 80px 0px;
+}
+.info .container{
+  height: 70vh;
+}
+.info .carousel .carousel-item {
+  height: 400px;
+  background-color: #777;
+}
+.info .carousel-inner > .carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+.info p{
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+.info .center{
+  position: relative;
+  transform: translate(0, -50%);
+  top: 40%;
+  padding-left: 30px;
+}
+.info a{
+  position: relative;
+  left: 50%;
+}
+/* user html */
+
+#user .container{
+ height: 80vh;
+ padding: 80px 0px;
+}
+#user .container:nth-child(1){
+  border-left: 2px solid rgba(0, 0, 0, 0.09);
+  border-right: 2px solid rgba(0, 0, 0, 0.09);
+}
+#user img{
+  width: 120px;
+  border-radius: 100%;
+}
+#user .distence{
+  margin-top: 80px;
+}
+#user hr{
+  width: 79%;
+}
+
+/* news*/
+#news{
+  padding: 80px;
+}
+#news a{
+  text-decoration: none;
+  color: black;
+}
+#news .bord{
+  height: 70vh;
+  border-left: 2px solid rgba(0, 0, 0, 0.09);
+  border-right: 2px solid rgba(0, 0, 0, 0.09);
+  padding: 20px;
+}
+#news .ques{
+  padding: 20px 0;
+}
+#news .shadow{
+  box-shadow: 0 0 8px  rgba(0, 0, 0, 0.12);
+}
+#news img{
+  width: 100px;
+  border-radius: 100%;
+}
+#news .down{
+  padding: 10px;
+}
