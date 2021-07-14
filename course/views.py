@@ -10,6 +10,7 @@ def course(request):
     }
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'course/course.html', context=context)
 
 @login_required(login_url="personal:login")
@@ -17,6 +18,7 @@ def problem(request):
     context = {}
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'course/problem.html', context=context)
 
 @login_required(login_url="personal:login")
@@ -24,6 +26,7 @@ def new(request):
     context = {}
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'course/new.html', context=context)
 
 @login_required(login_url="personal:login")
@@ -31,6 +34,7 @@ def detail(request):
     context = {}
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'course/detail.html', context=context)
 
 @login_required(login_url="personal:login")
@@ -38,4 +42,5 @@ def check(request):
     context = {}
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'course/check.html', context=context)

@@ -11,12 +11,14 @@ def userProfile(request):
     context = {}
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'personal/userProfile.html', context=context)
 
 def register(request):
     context = {}
     if request.user.is_authenticated:
         context['is_authenticated'] = True
+        context['coin'] = request.user.coin.coin
     return render(request, 'personal/register.html', context=context)
 
 def login(request):
