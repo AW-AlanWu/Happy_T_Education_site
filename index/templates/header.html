@@ -11,6 +11,7 @@
                   <li class="nav-item ">
                       <a class="nav-link active" aria-current="page" href="{% url 'index:index' %}"><i class="fas fa-home"></i>主頁</a>
                   </li>
+                  {% if is_authenticated %}
                   <li class="nav-item dropdown">
                       <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="fas fa-book-open"></i>學習
@@ -34,9 +35,14 @@
                       <p class="nav-link active"><i class="fas fa-coins"></i>T幣：</p>
                   </li>
                   <li class="nav-item justify-content-end right">                      
+                    <a class="btn btn-success btn-lg" href="{% url 'personal:log_out' %}" role="button">登出</a>
+                </li>
+                  {% else %}
+                  <li class="nav-item justify-content-end right">                      
                       <a class="btn btn-success btn-lg" href="{% url 'personal:login' %}" role="button">登入</a>
                       <a class="btn btn-success btn-lg" href="{% url 'personal:register' %}" role="button">註冊</a>
-                  </li>    
+                  </li>
+                  {% endif %}    
                 </div>
               </ul>
             </div>

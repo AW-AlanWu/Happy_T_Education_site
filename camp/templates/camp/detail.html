@@ -2,42 +2,43 @@
 {% block title %} 快樂T教育平台 {% endblock %}
 {% block content %}
 <section class="info">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 ">
-                <div id="carouselExampleInterval" class="carousel slide box" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="https://pic.pimg.tw/newbrue/1464098717-1580541710_n.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="https://www.pyps.ntpc.edu.tw/var/file/0/1000/img/1.jpg" class="d-block w-100" alt="...">
-                      </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 ">
+              <div id="carouselExampleInterval" class="carousel slide box" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img src="https://pic.pimg.tw/newbrue/1464098717-1580541710_n.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="https://www.pyps.ntpc.edu.tw/var/file/0/1000/img/1.jpg" class="d-block w-100" alt="...">
+                    </div>
                   </div>
-            </div>
-            <div class="col-md-6">
-                <div class="center">
-                    <p><i class="fas fa-flag"></i>城鄉共學花蓮縣萬榮鄉西林國小及新北市汐止白雲國小</p>
-                    <p><i class="fas fa-clock"></i>2021年1月15日到同月21日</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">報名參與</a>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>城鄉共學計畫</h3>
-                <p>活動內容  帶領小朋友們走入池上 體驗農家的生活、種稻的辛苦 了解 粒粒皆辛苦</p>
-            </div>
-        </div>
-    </div>
+          </div>
+          <div class="col-md-6">
+              <div class="center">
+                  <p><i class="fas fa-flag"></i>池上之美</p>
+                  <p><i class="fas fa-clock"></i>2021年1月15日到1月21日</p>
+                  <p><i class="fas fa-user"></i>承辦人：王德芳</p>
+                  <p><i class="fas fa-phone"></i>聯絡資訊：09-xxxxxxxx</p>
+                  <a class="btn btn-primary btn-lg" href="{% url 'camp:join' %}" role="button">報名參與</a>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12"> 
+              <p>活動內容  帶領小朋友們走入池上 體驗農家的生活、種稻的辛苦 了解 粒粒皆辛苦</p>
+          </div>
+      </div>
+  </div>
 </section>
 {% endblock %}

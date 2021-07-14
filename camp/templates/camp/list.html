@@ -6,10 +6,11 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2>營隊資訊</h2>
+                <h4 class="text-end left"><a href="{% url 'camp:new' %}"><i class="fas fa-plus"></i>新增營隊</a></h4>
                 <div class="row">       
                     <div class="col-md-3 text-start">
                         <div class="outer">                       
-                            <a href="list1.html">
+                            <a href="{% url 'camp:Detail' %}">
                                 <div class="inner">
                                     {% load static %}
                                     <img src="{% static 'pic/replace.png' %}">

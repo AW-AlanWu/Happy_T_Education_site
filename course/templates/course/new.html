@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                {% load static %}
+                <img src="{% static 'pic/new.png' %}" >
+                <form action="#">
+                    <label class="btn btn-primary">
+                        <input id="upload_img" style="display:none;" type="file">
+                        <i class="fa fa-photo"></i> 上傳課程預覽圖
+                    </label>
+                </form>
+            </div>
+            <div class="col-md-6">       
+                <div class="center">
+                    <form action="#">
+                        <br>
+                        <i class="fas fa-book-open"></i>
+                        <div class="input-group input-group-md">
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="課程名稱">
+                        </div>
+                        <i class="fas fa-user-circle"></i>
+                        <div class="input-group input-group-md">
+                            <div class="input-group input-group-md">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="教師名稱">
+                            </div>
+                        </div>
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="input-group input-group-md">
+                            <div class="input-group input-group-md">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="課堂數">
+                            </div>
+                        </div>
+                        <div class="input-group input-group-md">
+                            <i class="fas fa-coins"></i>
+                            <div class="input-group input-group-md">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="收取的T幣">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">課程介紹</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <br>
+                        <a class="btn btn-success btn-lg" href="#" role="button">創建</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+               <div>
+                   <h3>上傳課程內容</h3>
+                    <label class="btn btn-primary">
+                    <input id="upload_img" style="display:none;" type="file">
+                    <i class="fa fa-photo"></i> 上傳影片
+                    </label>
+                </div>                 
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block bodyScript %}
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

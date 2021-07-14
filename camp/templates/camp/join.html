@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 small">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/%E5%8F%B0%E6%9D%B1%E6%B1%A0%E4%B8%8A%E7%A8%BB%E7%A9%97%E7%A7%8B%E6%94%B6.jpg" style="width: 100%;">
+            </div>
+            <div class="col-md-6">       
+                <div class="center">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                          <label for="validationCustom01" class="form-label">名字</label>
+                          <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationCustom02" class="form-label">身分證</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="" required>  
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">電話</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>  
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">緊急聯絡人電話</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>  
+                        </div>
+                        <div class="col-md-2">
+                          <label for="validationCustom05" class="form-label">年級</label>
+                          <input type="text" class="form-control" id="validationCustom05" required>                             
+                        </div>
+                        <div class="col-md-2">
+                            <label for="validationCustom05" class="form-label">葷素</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>                             
+                          </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom05" class="form-label">匯款帳號末五碼</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>                             
+                        </div>
+                        <div class="col-md-12 ">
+                            <a class="btn btn-success btn-lg" href="#" role="button">報名</a>
+                        </div>                          
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block bodyScript %}
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

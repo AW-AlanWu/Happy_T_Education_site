@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <img src="https://images.edexlive.com/uploads/user/imagelibrary/2019/3/26/original/thesisc.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="center">
+                    <p><i class="fas fa-flag"></i>吳宏國文</p>
+                    <p><i class="fas fa-clock"></i>總計12堂，24小時</p>
+                    <a class="btn btn-primary btn-lg" href="{% url 'course:check' %}" role="button">報名參與</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>課程資訊</h3>
+                <p>本次課程將會帶領同學上完中國文學，並在最後有個小測驗</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

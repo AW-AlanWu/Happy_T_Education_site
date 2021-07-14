@@ -1,5 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
+@login_required(login_url="personal:login")
 def event(request):
-    return render(request, 'event/event.html')
+    context = {}
+    if request.user.is_authenticated:
+        context['is_authenticated'] = True
+    return render(request, 'event/event.html', context=context)

@@ -1,8 +1,37 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
+@login_required(login_url="personal:login")
 def course(request):
-    return render(request, 'course/course.html')
+    context = {}
+    if request.user.is_authenticated:
+        context['is_authenticated'] = True
+    return render(request, 'course/course.html', context=context)
 
+@login_required(login_url="personal:login")
 def problem(request):
-    return render(request, 'course/problem.html')
+    context = {}
+    if request.user.is_authenticated:
+        context['is_authenticated'] = True
+    return render(request, 'course/problem.html', context=context)
+
+@login_required(login_url="personal:login")
+def new(request):
+    context = {}
+    if request.user.is_authenticated:
+        context['is_authenticated'] = True
+    return render(request, 'course/new.html', context=context)
+
+@login_required(login_url="personal:login")
+def detail(request):
+    context = {}
+    if request.user.is_authenticated:
+        context['is_authenticated'] = True
+    return render(request, 'course/detail.html', context=context)
+
+@login_required(login_url="personal:login")
+def check(request):
+    context = {}
+    if request.user.is_authenticated:
+        context['is_authenticated'] = True
+    return render(request, 'course/check.html', context=context)

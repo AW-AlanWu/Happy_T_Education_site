@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2>課程資訊</h2>
-                <h4 class="text-end left"><a href="#"><i class="fas fa-plus"></i>新增課程</a></h4>
+                <h4 class="text-end left"><a href="{% url 'course:new' %}"><i class="fas fa-plus"></i>新增課程</a></h4>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                       <li class="nav-item btnall">
@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-3 text-start chinese active gcontent">
                         <div class="outer">                       
-                            <a href="#">
+                            <a href="{% url 'course:detail' %}">
                                 <div class="inner">
                                     {% load static %}
                                     <img src="{% static 'pic/replace.png' %}">

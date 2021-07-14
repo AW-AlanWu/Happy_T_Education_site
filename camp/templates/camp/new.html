@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %} 快樂T教育平台 {% endblock %}
+{% block content %}
+<section class="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                {% load static %}
+                <img src="{% static 'pic/new.png' %}" >
+                <form action="#">
+                    <label class="btn btn-primary">
+                        <input id="upload_img" style="display:none;" type="file">
+                        <i class="fa fa-photo"></i> 上傳營隊預覽圖
+                    </label>
+                </form>
+            </div>
+            <div class="col-md-6">       
+                <div class="center">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                          <label for="validationCustom01" class="form-label">營隊名稱</label>
+                          <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationCustom02" class="form-label">承辦人名稱</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="" required>  
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">承辦人電話</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>  
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationCustom03" class="form-label">營隊地點</label>
+                          <input type="text" class="form-control" id="validationCustom03" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom02" class="form-label">營隊費用</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>  
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom05" class="form-label">參加對象</label>
+                          <input type="text" class="form-control" id="validationCustom05" required>                             
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">營隊限制人數</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>                             
+                          </div>
+                        <div class="col-md-9">
+                            <label for="validationCustom05" class="form-label">日期</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>                             
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom05" class="form-label">匯款銀行帳戶</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>                             
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">課程介紹</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-start">
+                            <a class="btn btn-success btn-lg" href="#" role="button">創建</a>
+                        </div>                          
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block bodyScript %}
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
