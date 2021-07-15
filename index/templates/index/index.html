@@ -37,7 +37,7 @@
                     <div class="center">
                         <h2>各式各樣的高質量課程</h2>
                         <p>只需擁有足夠的T幣就能免費加入課程。</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">加入課程</a>
+                        <a class="btn btn-primary btn-lg" href="{% url 'course:course' %}" role="button">查看課程</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <div class="col-md-6 center">
                     <h2>不定期舉辦的營隊活動</h2>
                     <p>隨時關注我們</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">尋找營隊</a>
+                    <a class="btn btn-primary btn-lg" href="{% url 'camp:List' %}" role="button">尋找營隊</a>
                 </div>
                 <div class="col-md-6">
                     {% load static %}

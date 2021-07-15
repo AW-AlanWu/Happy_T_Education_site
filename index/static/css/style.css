@@ -1,3 +1,6 @@
+#news .btn{
+  font-size: 1rem;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Noto Sans TC',sans-serif;
   }
@@ -95,9 +98,11 @@ header img{
 #fourth a{
   text-decoration: none;
 }
-footer{
+footer .navbar{
+  width: 100%;
   padding-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 1);
+  background-color: #C6E070;
 }
 
 /* class anc camp base */
@@ -281,7 +286,6 @@ footer{
   color: black;
 }
 #news .bord{
-  height: 70vh;
   border-left: 2px solid rgba(0, 0, 0, 0.09);
   border-right: 2px solid rgba(0, 0, 0, 0.09);
   padding: 20px;
